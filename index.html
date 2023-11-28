@@ -21,6 +21,22 @@
     <div>
         <video class="background" src="[Live Wallpaper] PUBG MOBILE [4K].mp4" muted autoplay loop></video>
     </div>
-    <script src="script.js"></script>
+    <script>
+        var userName = document.querySelector('#userName');
+        var name = "MasWalker";
+        
+        var userPassword = document.querySelector('#password');
+        var password = "mas";
+
+        let clicker = () => {
+            switch(name) {
+                case userName.value : switch(password){
+                    case userPassword.value : alert('True');break;
+                    default : alert('Your password is wrong');
+                }; break;
+                default : alert("Username & password are wrong!");
+            };
+        };
+    </script>
 </body>
 </html>
